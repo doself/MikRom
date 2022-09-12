@@ -34,28 +34,6 @@ PixelExperience的版本不再更新，已迁移回aosp。后续如果更新都�
 
 如果使用1.0.1的mikrom要使用对应的1.0.1的mikmanager，否则无法正常脱壳。 
 
-### 修复说明
-
-aosp10r2_marlin_1.0.1重新更新了下载地址，修复了一些人反馈安装面具出现提示`Magisk is installed to external storage.`
-
-### 编译说明
-
-在[谷歌官网](https://source.android.com/setup/start/build-numbers?hl=zh-cn)找到你设备应该使用的对应版本
-
-在[谷歌官网](https://developers.google.com/android/images#bullhead)下载你要刷的版本
-
-在源码根目录下解压并执行
-
-然后记得给我新增的目录添加下白名单
-
-`build/core/tasks/check_boot_jars/package_whitelist.txt`添加`cn\.mik`
-
-最后编译
-
-`make update-api -j12`
-
-`make -j8`
-
 ### 刷机说明
 
 卡刷包直接使用twrp-marlin的版本刷入即可。
